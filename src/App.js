@@ -14,13 +14,14 @@ export default function ProfileStatistics() {
             <MDBCard style={{ borderRadius: '15px' }}>
               <MDBCardBody className="text-center">
                 <div className="mt-3 mb-4">
-                  <MDBCardImage src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                  <MDBCardImage src={logo}
                     className="rounded-circle" fluid style={{ width: '100px' }} />
                 </div>
-                <MDBTypography tag="h4">Julie L. Arsenault</MDBTypography>
+                <MDBTypography tag="h4">Johannes Meng</MDBTypography>
                 <MDBCardText className="text-muted mb-4">
-                  @Programmer <span className="mx-2">|</span> <a href="#!">mdbootstrap.com</a>
+                  Master of Science <span className="mx-2">|</span> <a href="https://www.internet-sicherheit.de/" target="_blank">Internet-Security</a>
                 </MDBCardText>
+                {/*
                 <div className="mb-4 pb-2">
                   <MDBBtn outline floating>
                     <MDBIcon fab icon="facebook" size="lg" />
@@ -32,9 +33,11 @@ export default function ProfileStatistics() {
                     <MDBIcon fab icon="skype" size="lg" />
                   </MDBBtn>
                 </div>
-                <MDBBtn rounded size="lg">
+                */}
+                <MDBBtn rounded size="lg" href='mailto:johannes.meng@studmail.w-hs.de'>
                   Message now
                 </MDBBtn>
+                {/* 
                 <div className="d-flex justify-content-between text-center mt-5 mb-2">
                   <div>
                     <MDBCardText className="mb-1 h5">8471</MDBCardText>
@@ -49,6 +52,7 @@ export default function ProfileStatistics() {
                     <MDBCardText className="small text-muted mb-0">Total Transactions</MDBCardText>
                   </div>
                 </div>
+                 */}
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
