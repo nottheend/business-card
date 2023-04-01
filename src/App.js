@@ -1,11 +1,31 @@
 import React from 'react';
 import logo from './logo.svg';
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Subscribe from "./pages/Subscribe";
 import './App.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography, MDBIcon } from 'mdb-react-ui-kit';
 
-export default function ProfileStatistics() {
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<ProfileStatistics />} />
+          <Route path="subscribe" element={<Subscribe />} />
+          <Route path="*" element={<ProfileStatistics />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+export function ProfileStatistics() {
   return (
     <div className="vh-100" style={{ backgroundColor: '#eee' }}>
       <MDBContainer className="container py-5 h-100">
