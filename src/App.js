@@ -8,6 +8,43 @@ import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCar
 export default function ProfileStatistics() {
   return (
     <div className="vh-100" style={{ backgroundColor: '#eee' }}>
+      <header>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <MDBContainer fluid>
+            <MDBBtn className="navbar-brand" href="/">
+              <MDBIcon icon="home" className="me-2" />
+              Home
+            </MDBBtn>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <MDBBtn className="nav-link" href="#about">
+                    About
+                  </MDBBtn>
+                </li>
+                <li className="nav-item">
+                  <MDBBtn className="nav-link" href="#skills">
+                    Skills
+                  </MDBBtn>
+                </li>
+                <li className="nav-item">
+                  <MDBBtn className="nav-link" href="#portfolio">
+                    Portfolio
+                  </MDBBtn>
+                </li>
+                <li className="nav-item">
+                  <MDBBtn className="nav-link" href="#contact">
+                    Contact
+                  </MDBBtn>
+                </li>
+              </ul>
+            </div>
+          </MDBContainer>
+        </nav>
+      </header>
       <MDBContainer className="container py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol md="12" xl="4">
@@ -34,7 +71,7 @@ export default function ProfileStatistics() {
                   </MDBBtn>
                 </div>
                 */}
-                <MDBBtn rounded size="lg" href='mailto:johannes.meng@studmail.w-hs.de'>
+                <MDBBtn rounded size="lg" onClick={() => { window.location.href = 'mailto:' + 'johannes' + '@' + 'meng.nrw'; }}>
                   Message now
                 </MDBBtn>
                 {/* 
