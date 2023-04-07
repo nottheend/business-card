@@ -4,54 +4,13 @@ import './App.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography, MDBIcon } from 'mdb-react-ui-kit';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+
 
 export default function ProfileStatistics() {
   return (
     <div className="vh-100" style={{ backgroundColor: '#eee' }}>
       <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <MDBContainer fluid>
-            <MDBBtn className="navbar-brand" href="/">
-              <MDBIcon icon="home" className="me-2" />
-              Home
-            </MDBBtn>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <MDBBtn className="nav-link" href="#about">
-                    About
-                  </MDBBtn>
-                </li>
-                <li className="nav-item">
-                  <MDBBtn className="nav-link" href="#skills">
-                    Skills
-                  </MDBBtn>
-                </li>
-                <li className="nav-item">
-                  <MDBBtn className="nav-link" href="#portfolio">
-                    Portfolio
-                  </MDBBtn>
-                </li>
-                <li className="nav-item">
-                  <MDBBtn className="nav-link" href="#contact">
-                    Contact
-                  </MDBBtn>
-                </li>
-              </ul>
-            </div>
-          </MDBContainer>
-        </nav>
       </header>
       <MDBContainer className="container py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
