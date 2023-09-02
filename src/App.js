@@ -21,7 +21,7 @@ export default function ProfileStatistics() {
             <MDBCard style={{ borderRadius: '15px' }}>
               <MDBCardBody className="text-center">
                 <div className="mt-3 mb-4">
-                  <MDBCardImage src={logo}
+                  <MDBCardImage src="🛡️"
                     className="rounded-circle" fluid style={{ width: '100px' }} />
                 </div>
                 <MDBTypography tag="h4">Johannes Meng</MDBTypography>
