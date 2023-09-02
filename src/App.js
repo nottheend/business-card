@@ -8,6 +8,9 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 
 export default function ProfileStatistics() {
+  // LinkedIn profile URL
+  const linkedInProfileUrl = 'https://www.linkedin.com/in/johannes-meng-it-security';
+
   return (
     <div className="vh-100" style={{ backgroundColor: '#eee' }}>
       <header>
@@ -25,6 +28,11 @@ export default function ProfileStatistics() {
                 <MDBCardText className="text-muted mb-4">
                   Master of Science <span className="mx-2">|</span> <a href="https://www.internet-sicherheit.de/" target="_blank">Internet-Security</a>
                 </MDBCardText>
+                {/* Add the LinkedIn link entry here */}
+                <MDBCardText className="text-muted mb-4">
+                  Work Experience: <a href={linkedInProfileUrl} target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                </MDBCardText>
+
                 {/*
                 <div className="mb-4 pb-2">
                   <MDBBtn outline floating>
