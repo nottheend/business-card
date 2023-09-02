@@ -47,7 +47,7 @@ export default function ProfileStatistics() {
                 </div>
                 */}
                 <MDBBtn rounded size="lg" onClick={() => { window.location.href = 'mailto:' + 'johannes' + '@' + 'meng.nrw'; }}>
-                  Message now
+                  Message now ✉️
                 </MDBBtn>
                 {/* 
                 <div className="d-flex justify-content-between text-center mt-5 mb-2">
