@@ -30,7 +30,7 @@ export default function ProfileStatistics() {
                 </MDBCardText>
                 {/* Add the LinkedIn link entry here */}
                 <MDBCardText className="text-muted mb-4">
-                  Work Experience: <a href={linkedInProfileUrl} target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                  Work Experience <span className="mx-2">|</span> <a href={linkedInProfileUrl} target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
                 </MDBCardText>
 
                 {/*
