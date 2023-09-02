@@ -26,6 +26,8 @@ export default function ProfileStatistics() {
                 </div>
                 <MDBTypography tag="h4">Johannes Meng</MDBTypography>
                 <MDBCardText className="text-muted mb-4">
+                </MDBCardText>
+                <MDBCardText className="text-muted mb-4">
                   Master of Science <span className="mx-2">|</span> <a href="https://www.internet-sicherheit.de/" target="_blank">Internet-Security</a>
                 </MDBCardText>
                 <MDBCardText className="text-muted mb-4">
